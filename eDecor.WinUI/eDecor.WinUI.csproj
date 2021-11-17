@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\rose.ico</ApplicationIcon>
+    <ApplicationIcon>rose.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Flurl, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -398,6 +398,7 @@
     <Content Include="Resources\retic.png" />
     <Content Include="Resources\vozilo.png" />
     <Content Include="Resources\rose.ico" />
+    <Content Include="rose.ico" />
     <None Include="Resources\outline_refresh_black_18dp.png" />
     <Content Include="Resources\naslov.png" />
     <Content Include="Resources\outline_admin_panel_settings_white_24dp.png" />

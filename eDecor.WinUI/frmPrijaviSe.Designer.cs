@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrijaviSe));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,8 +57,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 240);
+            this.panel1.Size = new System.Drawing.Size(504, 295);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -65,9 +67,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Salmon;
-            this.label1.Location = new System.Drawing.Point(134, 29);
+            this.label1.Location = new System.Drawing.Point(179, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 47);
+            this.label1.Size = new System.Drawing.Size(141, 59);
             this.label1.TabIndex = 26;
             this.label1.Text = "eDecor";
             // 
@@ -77,8 +80,9 @@
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(376, 25);
+            this.panel2.Size = new System.Drawing.Size(502, 31);
             this.panel2.TabIndex = 33;
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
@@ -88,9 +92,10 @@
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::eDecor.WinUI.Properties.Resources.outline_clear_white_18dp;
-            this.btnClose.Location = new System.Drawing.Point(325, 1);
+            this.btnClose.Location = new System.Drawing.Point(434, 1);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(50, 25);
+            this.btnClose.Size = new System.Drawing.Size(67, 31);
             this.btnClose.TabIndex = 8;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -99,9 +104,10 @@
             // 
             this.pbPrikazi.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbPrikazi.Image = global::eDecor.WinUI.Properties.Resources.outline_visibility_black_18dp;
-            this.pbPrikazi.Location = new System.Drawing.Point(307, 163);
+            this.pbPrikazi.Location = new System.Drawing.Point(409, 201);
+            this.pbPrikazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbPrikazi.Name = "pbPrikazi";
-            this.pbPrikazi.Size = new System.Drawing.Size(27, 24);
+            this.pbPrikazi.Size = new System.Drawing.Size(35, 29);
             this.pbPrikazi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPrikazi.TabIndex = 32;
             this.pbPrikazi.TabStop = false;
@@ -112,9 +118,10 @@
             this.btnPrijaviSe.BackColor = System.Drawing.Color.Salmon;
             this.btnPrijaviSe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrijaviSe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPrijaviSe.Location = new System.Drawing.Point(131, 198);
+            this.btnPrijaviSe.Location = new System.Drawing.Point(175, 244);
+            this.btnPrijaviSe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrijaviSe.Name = "btnPrijaviSe";
-            this.btnPrijaviSe.Size = new System.Drawing.Size(115, 35);
+            this.btnPrijaviSe.Size = new System.Drawing.Size(153, 43);
             this.btnPrijaviSe.TabIndex = 31;
             this.btnPrijaviSe.Text = "Prijavi se";
             this.btnPrijaviSe.UseVisualStyleBackColor = false;
@@ -123,9 +130,10 @@
             // txtLozinka
             // 
             this.txtLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLozinka.Location = new System.Drawing.Point(39, 163);
+            this.txtLozinka.Location = new System.Drawing.Point(52, 201);
+            this.txtLozinka.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLozinka.Name = "txtLozinka";
-            this.txtLozinka.Size = new System.Drawing.Size(262, 23);
+            this.txtLozinka.Size = new System.Drawing.Size(348, 26);
             this.txtLozinka.TabIndex = 30;
             this.txtLozinka.UseSystemPasswordChar = true;
             // 
@@ -133,38 +141,43 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 139);
+            this.label3.Location = new System.Drawing.Point(48, 171);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 29;
             this.label3.Text = "Lozinka";
             // 
             // txtKorisnickoIme
             // 
             this.txtKorisnickoIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKorisnickoIme.Location = new System.Drawing.Point(39, 108);
+            this.txtKorisnickoIme.Location = new System.Drawing.Point(52, 133);
+            this.txtKorisnickoIme.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtKorisnickoIme.Name = "txtKorisnickoIme";
-            this.txtKorisnickoIme.Size = new System.Drawing.Size(293, 22);
+            this.txtKorisnickoIme.Size = new System.Drawing.Size(389, 26);
             this.txtKorisnickoIme.TabIndex = 28;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 84);
+            this.label2.Location = new System.Drawing.Point(48, 103);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
+            this.label2.Size = new System.Drawing.Size(119, 20);
             this.label2.TabIndex = 27;
             this.label2.Text = "Korisničko ime";
             // 
             // frmPrijaviSe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(378, 240);
+            this.ClientSize = new System.Drawing.Size(504, 295);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPrijaviSe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijavi se";

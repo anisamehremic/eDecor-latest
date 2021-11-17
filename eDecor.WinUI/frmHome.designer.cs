@@ -61,10 +61,12 @@
             this.btnRezervacije = new System.Windows.Forms.Button();
             this.panelKupciSubmenu = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.btnKupaci = new System.Windows.Forms.Button();
             this.panelKorisniciSubmenu = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnKorisnici = new System.Windows.Forms.Button();
             this.panelMenuBarr = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMaximize = new System.Windows.Forms.Button();
@@ -72,8 +74,6 @@
             this.btnRestoreDown = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnKorisnici = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -97,7 +97,7 @@
             this.panelContenedor.Controls.Add(this.panelMenuBarr);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.panelContenedor.MinimumSize = new System.Drawing.Size(1266, 738);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1733, 1046);
@@ -109,7 +109,7 @@
             this.panelChildForm.Controls.Add(this.pictureBox3);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(333, 49);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(1398, 995);
             this.panelChildForm.TabIndex = 2;
@@ -120,7 +120,7 @@
             this.pictureBox3.Enabled = false;
             this.pictureBox3.Image = global::eDecor.WinUI.Properties.Resources.outline_shopping_cart_white_24dp;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1398, 995);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -150,7 +150,7 @@
             this.panelSideMenu.Controls.Add(this.btnKorisnici);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 49);
-            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(333, 995);
             this.panelSideMenu.TabIndex = 1;
@@ -166,7 +166,7 @@
             this.btnOdjaviSe.Image = global::eDecor.WinUI.Properties.Resources.outline_exit_to_app_white_24dp;
             this.btnOdjaviSe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOdjaviSe.Location = new System.Drawing.Point(0, 1351);
-            this.btnOdjaviSe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOdjaviSe.Margin = new System.Windows.Forms.Padding(4);
             this.btnOdjaviSe.Name = "btnOdjaviSe";
             this.btnOdjaviSe.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnOdjaviSe.Size = new System.Drawing.Size(312, 55);
@@ -188,7 +188,7 @@
             this.btnIzvjestaji.Image = global::eDecor.WinUI.Properties.Resources.outline_analytics_white_24dp;
             this.btnIzvjestaji.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIzvjestaji.Location = new System.Drawing.Point(0, 1296);
-            this.btnIzvjestaji.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIzvjestaji.Margin = new System.Windows.Forms.Padding(4);
             this.btnIzvjestaji.Name = "btnIzvjestaji";
             this.btnIzvjestaji.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnIzvjestaji.Size = new System.Drawing.Size(312, 55);
@@ -206,7 +206,7 @@
             this.panelPretplateSubmenu.Controls.Add(this.button32);
             this.panelPretplateSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPretplateSubmenu.Location = new System.Drawing.Point(0, 1195);
-            this.panelPretplateSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelPretplateSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelPretplateSubmenu.Name = "panelPretplateSubmenu";
             this.panelPretplateSubmenu.Size = new System.Drawing.Size(312, 101);
             this.panelPretplateSubmenu.TabIndex = 31;
@@ -219,7 +219,7 @@
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button31.Location = new System.Drawing.Point(0, 49);
-            this.button31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button31.Margin = new System.Windows.Forms.Padding(4);
             this.button31.Name = "button31";
             this.button31.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button31.Size = new System.Drawing.Size(312, 49);
@@ -237,7 +237,7 @@
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button32.Location = new System.Drawing.Point(0, 0);
-            this.button32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button32.Margin = new System.Windows.Forms.Padding(4);
             this.button32.Name = "button32";
             this.button32.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button32.Size = new System.Drawing.Size(312, 49);
@@ -258,7 +258,7 @@
             this.btnPretplate.Image = global::eDecor.WinUI.Properties.Resources.outline_loyalty_white_24dp;
             this.btnPretplate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPretplate.Location = new System.Drawing.Point(0, 1140);
-            this.btnPretplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPretplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnPretplate.Name = "btnPretplate";
             this.btnPretplate.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnPretplate.Size = new System.Drawing.Size(312, 55);
@@ -276,7 +276,7 @@
             this.panelNovostiSubmenu.Controls.Add(this.button27);
             this.panelNovostiSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNovostiSubmenu.Location = new System.Drawing.Point(0, 1038);
-            this.panelNovostiSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelNovostiSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelNovostiSubmenu.Name = "panelNovostiSubmenu";
             this.panelNovostiSubmenu.Size = new System.Drawing.Size(312, 102);
             this.panelNovostiSubmenu.TabIndex = 29;
@@ -289,7 +289,7 @@
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button26.Location = new System.Drawing.Point(0, 49);
-            this.button26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button26.Margin = new System.Windows.Forms.Padding(4);
             this.button26.Name = "button26";
             this.button26.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button26.Size = new System.Drawing.Size(312, 49);
@@ -307,7 +307,7 @@
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button27.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button27.Location = new System.Drawing.Point(0, 0);
-            this.button27.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button27.Margin = new System.Windows.Forms.Padding(4);
             this.button27.Name = "button27";
             this.button27.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button27.Size = new System.Drawing.Size(312, 49);
@@ -328,7 +328,7 @@
             this.btnNovosti.Image = global::eDecor.WinUI.Properties.Resources.outline_library_books_white_24dp;
             this.btnNovosti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovosti.Location = new System.Drawing.Point(0, 983);
-            this.btnNovosti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovosti.Margin = new System.Windows.Forms.Padding(4);
             this.btnNovosti.Name = "btnNovosti";
             this.btnNovosti.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnNovosti.Size = new System.Drawing.Size(312, 55);
@@ -346,7 +346,7 @@
             this.panelLokacijeSubmenu.Controls.Add(this.btnGradovi);
             this.panelLokacijeSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLokacijeSubmenu.Location = new System.Drawing.Point(0, 881);
-            this.panelLokacijeSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLokacijeSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelLokacijeSubmenu.Name = "panelLokacijeSubmenu";
             this.panelLokacijeSubmenu.Size = new System.Drawing.Size(312, 102);
             this.panelLokacijeSubmenu.TabIndex = 18;
@@ -359,7 +359,7 @@
             this.btnDrzave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDrzave.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnDrzave.Location = new System.Drawing.Point(0, 49);
-            this.btnDrzave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDrzave.Margin = new System.Windows.Forms.Padding(4);
             this.btnDrzave.Name = "btnDrzave";
             this.btnDrzave.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.btnDrzave.Size = new System.Drawing.Size(312, 49);
@@ -377,7 +377,7 @@
             this.btnGradovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGradovi.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnGradovi.Location = new System.Drawing.Point(0, 0);
-            this.btnGradovi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGradovi.Margin = new System.Windows.Forms.Padding(4);
             this.btnGradovi.Name = "btnGradovi";
             this.btnGradovi.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.btnGradovi.Size = new System.Drawing.Size(312, 49);
@@ -398,7 +398,7 @@
             this.btnLokacijeMain.Image = global::eDecor.WinUI.Properties.Resources.outline_where_to_vote_white_24dp1;
             this.btnLokacijeMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLokacijeMain.Location = new System.Drawing.Point(0, 826);
-            this.btnLokacijeMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLokacijeMain.Margin = new System.Windows.Forms.Padding(4);
             this.btnLokacijeMain.Name = "btnLokacijeMain";
             this.btnLokacijeMain.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnLokacijeMain.Size = new System.Drawing.Size(312, 55);
@@ -420,7 +420,7 @@
             this.btnRegistracije.Image = global::eDecor.WinUI.Properties.Resources.outline_fact_check_white_24dp;
             this.btnRegistracije.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistracije.Location = new System.Drawing.Point(0, 771);
-            this.btnRegistracije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistracije.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistracije.Name = "btnRegistracije";
             this.btnRegistracije.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnRegistracije.Size = new System.Drawing.Size(312, 55);
@@ -441,7 +441,7 @@
             this.panelVozilaSubmenu.Controls.Add(this.button14);
             this.panelVozilaSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelVozilaSubmenu.Location = new System.Drawing.Point(0, 522);
-            this.panelVozilaSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelVozilaSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelVozilaSubmenu.Name = "panelVozilaSubmenu";
             this.panelVozilaSubmenu.Size = new System.Drawing.Size(312, 249);
             this.panelVozilaSubmenu.TabIndex = 10;
@@ -454,7 +454,7 @@
             this.btnOsiguranja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOsiguranja.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnOsiguranja.Location = new System.Drawing.Point(0, 196);
-            this.btnOsiguranja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOsiguranja.Margin = new System.Windows.Forms.Padding(4);
             this.btnOsiguranja.Name = "btnOsiguranja";
             this.btnOsiguranja.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.btnOsiguranja.Size = new System.Drawing.Size(312, 49);
@@ -472,7 +472,7 @@
             this.btnProizvodjaci.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProizvodjaci.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnProizvodjaci.Location = new System.Drawing.Point(0, 147);
-            this.btnProizvodjaci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProizvodjaci.Margin = new System.Windows.Forms.Padding(4);
             this.btnProizvodjaci.Name = "btnProizvodjaci";
             this.btnProizvodjaci.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.btnProizvodjaci.Size = new System.Drawing.Size(312, 49);
@@ -490,7 +490,7 @@
             this.btnKategorije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKategorije.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnKategorije.Location = new System.Drawing.Point(0, 98);
-            this.btnKategorije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKategorije.Margin = new System.Windows.Forms.Padding(4);
             this.btnKategorije.Name = "btnKategorije";
             this.btnKategorije.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.btnKategorije.Size = new System.Drawing.Size(312, 49);
@@ -508,7 +508,7 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button13.Location = new System.Drawing.Point(0, 49);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button13.Size = new System.Drawing.Size(312, 49);
@@ -526,7 +526,7 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(0, 0);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button14.Size = new System.Drawing.Size(312, 49);
@@ -547,7 +547,7 @@
             this.btnVozila.Image = global::eDecor.WinUI.Properties.Resources.outline_directions_car_white_24dp;
             this.btnVozila.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVozila.Location = new System.Drawing.Point(0, 467);
-            this.btnVozila.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVozila.Margin = new System.Windows.Forms.Padding(4);
             this.btnVozila.Name = "btnVozila";
             this.btnVozila.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnVozila.Size = new System.Drawing.Size(312, 55);
@@ -565,7 +565,7 @@
             this.panelRezervacijeSubmenu.Controls.Add(this.button9);
             this.panelRezervacijeSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelRezervacijeSubmenu.Location = new System.Drawing.Point(0, 367);
-            this.panelRezervacijeSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelRezervacijeSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelRezervacijeSubmenu.Name = "panelRezervacijeSubmenu";
             this.panelRezervacijeSubmenu.Size = new System.Drawing.Size(312, 100);
             this.panelRezervacijeSubmenu.TabIndex = 6;
@@ -578,7 +578,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(0, 49);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(312, 49);
@@ -596,7 +596,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(0, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button9.Size = new System.Drawing.Size(312, 49);
@@ -617,7 +617,7 @@
             this.btnRezervacije.Image = global::eDecor.WinUI.Properties.Resources.outline_shopping_cart_white_24dp;
             this.btnRezervacije.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRezervacije.Location = new System.Drawing.Point(0, 312);
-            this.btnRezervacije.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRezervacije.Margin = new System.Windows.Forms.Padding(4);
             this.btnRezervacije.Name = "btnRezervacije";
             this.btnRezervacije.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnRezervacije.Size = new System.Drawing.Size(312, 55);
@@ -635,7 +635,7 @@
             this.panelKupciSubmenu.Controls.Add(this.button6);
             this.panelKupciSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKupciSubmenu.Location = new System.Drawing.Point(0, 211);
-            this.panelKupciSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelKupciSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelKupciSubmenu.Name = "panelKupciSubmenu";
             this.panelKupciSubmenu.Size = new System.Drawing.Size(312, 101);
             this.panelKupciSubmenu.TabIndex = 4;
@@ -648,7 +648,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(0, 49);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(312, 49);
@@ -657,6 +657,24 @@
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(56)))), ((int)(((byte)(71)))));
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.button6.Size = new System.Drawing.Size(312, 49);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "Prikaži klijenata";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnKupaci
             // 
@@ -669,7 +687,7 @@
             this.btnKupaci.Image = global::eDecor.WinUI.Properties.Resources.outline_person_outline_white_24dp;
             this.btnKupaci.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKupaci.Location = new System.Drawing.Point(0, 156);
-            this.btnKupaci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKupaci.Margin = new System.Windows.Forms.Padding(4);
             this.btnKupaci.Name = "btnKupaci";
             this.btnKupaci.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnKupaci.Size = new System.Drawing.Size(312, 55);
@@ -687,7 +705,7 @@
             this.panelKorisniciSubmenu.Controls.Add(this.button2);
             this.panelKorisniciSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelKorisniciSubmenu.Location = new System.Drawing.Point(0, 55);
-            this.panelKorisniciSubmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelKorisniciSubmenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelKorisniciSubmenu.Name = "panelKorisniciSubmenu";
             this.panelKorisniciSubmenu.Size = new System.Drawing.Size(312, 101);
             this.panelKorisniciSubmenu.TabIndex = 2;
@@ -700,7 +718,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(0, 49);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(312, 49);
@@ -718,7 +736,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(312, 49);
@@ -727,6 +745,28 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnKorisnici
+            // 
+            this.btnKorisnici.BackColor = System.Drawing.Color.Salmon;
+            this.btnKorisnici.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKorisnici.FlatAppearance.BorderSize = 0;
+            this.btnKorisnici.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKorisnici.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKorisnici.ForeColor = System.Drawing.Color.Transparent;
+            this.btnKorisnici.Image = global::eDecor.WinUI.Properties.Resources.outline_admin_panel_settings_white_24dp;
+            this.btnKorisnici.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKorisnici.Location = new System.Drawing.Point(0, 0);
+            this.btnKorisnici.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKorisnici.Name = "btnKorisnici";
+            this.btnKorisnici.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnKorisnici.Size = new System.Drawing.Size(312, 55);
+            this.btnKorisnici.TabIndex = 1;
+            this.btnKorisnici.Text = "Korisnici";
+            this.btnKorisnici.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKorisnici.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKorisnici.UseVisualStyleBackColor = false;
+            this.btnKorisnici.Click += new System.EventHandler(this.btnKorisnici_Click);
             // 
             // panelMenuBarr
             // 
@@ -739,7 +779,7 @@
             this.panelMenuBarr.Controls.Add(this.btnMinimize);
             this.panelMenuBarr.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuBarr.Location = new System.Drawing.Point(0, 0);
-            this.panelMenuBarr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenuBarr.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenuBarr.Name = "panelMenuBarr";
             this.panelMenuBarr.Size = new System.Drawing.Size(1731, 49);
             this.panelMenuBarr.TabIndex = 0;
@@ -765,7 +805,7 @@
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Image = global::eDecor.WinUI.Properties.Resources.outline_open_in_full_white_18dp1;
             this.btnMaximize.Location = new System.Drawing.Point(1596, -1);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(67, 49);
             this.btnMaximize.TabIndex = 6;
@@ -776,7 +816,7 @@
             // 
             this.pictureBox1.Image = global::eDecor.WinUI.Properties.Resources.outline_shopping_cart_white_24dp;
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -790,7 +830,7 @@
             this.btnRestoreDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestoreDown.Image = global::eDecor.WinUI.Properties.Resources.outline_close_fullscreen_white_18dp1;
             this.btnRestoreDown.Location = new System.Drawing.Point(1596, -1);
-            this.btnRestoreDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRestoreDown.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestoreDown.Name = "btnRestoreDown";
             this.btnRestoreDown.Size = new System.Drawing.Size(67, 49);
             this.btnRestoreDown.TabIndex = 7;
@@ -804,7 +844,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::eDecor.WinUI.Properties.Resources.outline_clear_white_18dp;
             this.btnClose.Location = new System.Drawing.Point(1664, -1);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(67, 49);
             this.btnClose.TabIndex = 6;
@@ -819,52 +859,12 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Image = global::eDecor.WinUI.Properties.Resources.outline_minimize_white_18dp;
             this.btnMinimize.Location = new System.Drawing.Point(1528, -1);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(67, 49);
             this.btnMinimize.TabIndex = 5;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnKorisnici
-            // 
-            this.btnKorisnici.BackColor = System.Drawing.Color.Salmon;
-            this.btnKorisnici.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKorisnici.FlatAppearance.BorderSize = 0;
-            this.btnKorisnici.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKorisnici.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKorisnici.ForeColor = System.Drawing.Color.Transparent;
-            this.btnKorisnici.Image = global::eDecor.WinUI.Properties.Resources.outline_admin_panel_settings_white_24dp;
-            this.btnKorisnici.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKorisnici.Location = new System.Drawing.Point(0, 0);
-            this.btnKorisnici.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKorisnici.Name = "btnKorisnici";
-            this.btnKorisnici.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.btnKorisnici.Size = new System.Drawing.Size(312, 55);
-            this.btnKorisnici.TabIndex = 1;
-            this.btnKorisnici.Text = "Korisnici";
-            this.btnKorisnici.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKorisnici.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKorisnici.UseVisualStyleBackColor = false;
-            this.btnKorisnici.Click += new System.EventHandler(this.btnKorisnici_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(56)))), ((int)(((byte)(71)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(312, 49);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Prikaži klijenata";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // frmHome
             // 
@@ -875,7 +875,7 @@
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1267, 738);
             this.Name = "frmHome";
             this.Text = "Rent A Car";
