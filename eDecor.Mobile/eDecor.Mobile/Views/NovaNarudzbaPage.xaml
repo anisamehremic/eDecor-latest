@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:converters="clr-namespace:eDecor.Mobile.Converters"
+             mc:Ignorable="d"
+             x:Class="eDecor.Mobile.Views.NovaNarudzbaPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Odaberite kategoriju" />
+            <Picker ItemsSource="{Binding kategorijeList}" SelectedItem="{Binding SelectedKategorija}" ItemDisplayBinding="{Binding Naziv}"/>
+            <Label />
+            <Label Text="Odaberite podkategoriju"/>
+            <Picker ItemsSource="{Binding podkategorijeList}" SelectedItem="{Binding SelectedPodkategorija}" ItemDisplayBinding="{Binding Naziv}"/>
+            <Label/>
+            <Button Text="Prikaži" Clicked="Button_Clicked"></Button>
+            <Label/>
+            <Label Text="{Binding Naslov}" FontSize="Title"  TextColor="#FF8C69" />
+            <ScrollView>
+                <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding InitCommand}">
+                    <CollectionView x:Name="ItemsCollectionView2" ItemsSource="{Binding artikliList}" MinimumHeightRequest="200">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Padding="3" Orientation="Horizontal">
+                                    <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" WidthRequest="150" HeightRequest="95"/>
+                                    <Label Text="{Binding Naziv}" 
+                                            d:Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                    <Label Text="{Binding Cijena}" 
+                                            d:Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                    <Label Text="KM" 
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </RefreshView>
+            </ScrollView>
+            <Label/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

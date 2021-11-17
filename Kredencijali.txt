@@ -1,0 +1,7 @@
+Desktop verzija:
+ Korisničko ime: desktop
+ Lozinka: test
+
+Mobile verzija:
+ Korisničko ime: mobile
+ Lozinka: test

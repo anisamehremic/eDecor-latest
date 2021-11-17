@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="clr-namespace:eDecor.Mobile.ViewModels"
+             mc:Ignorable="d"
+             x:Class="eDecor.Mobile.Views.PrijaviSePage" BackgroundColor="#FF8C69">
+
+    <ContentPage.BindingContext>
+        <vm:PrijaviSeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="30,0,30,60">
+            <Label Text="Dobrodošli u eDecor" TextColor="White" FontSize="30" Margin="0,0,0,40" HorizontalTextAlignment="Center"></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label></Label>
+            <Label Text="Korisničko Ime" TextColor="White" Padding="20,0,20,0" FontSize="16"></Label>
+            <Entry x:Name="KorisnickoIme" Text="{Binding Username}" Margin="20,0,20,0"></Entry>
+            <Label Text="Lozinka" TextColor="White" Margin="20,0,20,0" FontSize="16"></Label>
+            <Entry x:Name="Lozinka" Text="{Binding Password}" IsPassword="True" Margin="20,0,20,0"></Entry>
+            <Button Command="{Binding PrijaviSeCommand}" Text="PRIJAVI SE" BackgroundColor="#FF8C69" TextColor="White" BorderColor="White" Margin="20,20,20,0" FontAttributes="Bold" FontSize="16"></Button>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label VerticalOptions="CenterAndExpand" TextColor="White">Nemate korisnički nalog?</Label>
+                <Button Command="{Binding RegistrirajSeCommand}" BackgroundColor="White" TextColor="#FF8C69" Text="Registriraj se"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

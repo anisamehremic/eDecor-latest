@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:eDecor.Mobile.Converters"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="eDecor.Mobile.Views.NovaNarudzbaDetaljiPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <ScrollView>
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Source="{Binding Slika, Converter={StaticResource imgConv}}" WidthRequest="300" HeightRequest="150"/>
+
+                        <Label Grid.Row="0" Grid.Column="2" Text="Naziv"/>
+                        <Entry Grid.Row="1" Grid.Column="2" Text="{Binding Naziv}" IsReadOnly="True"></Entry>
+                        <Label Grid.Row="2" Grid.Column="2" Text="Cijena"/>
+                        <Entry Grid.Row="3" Grid.Column="2" Text="{Binding Cijena}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="4" Grid.Column="0" Text="Opis"/>
+                        <Entry Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Opis}" IsReadOnly="True"></Entry>
+                     
+                        <Label Grid.Row="6" Grid.Column="0" Text="Količina" VerticalTextAlignment="Center"/>
+                        <Entry Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Kolicina}"></Entry>
+                    </Grid>
+
+                    <Label/>
+                    <Label Text="Detalji narudžbe" FontSize="20"  TextColor="#FF8C69"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0"  Text="Grad:" VerticalOptions="End" Padding="7"/>
+                        <Picker Grid.Row="0" Grid.Column="1" ItemsSource="{Binding gradList}" SelectedItem="{Binding SelectedGrad}" ItemDisplayBinding="{Binding Naziv}"/>
+                    </Grid>
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Adresa" VerticalOptions="Center"/>
+                        <Entry Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Adresa}"></Entry>
+
+                        <Label Grid.Row="1" Grid.Column="0" Text="Napomena" VerticalOptions="Center"/>
+                        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Napomena}"></Entry>
+
+                        <Label Grid.Row="2" Grid.Column="0" Text="Kod za popust" VerticalOptions="Center"/>
+                        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Popust}"></Entry>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+            <Label/>
+            <Button BorderColor="Gray" Text="Kreiraj narudžbu" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

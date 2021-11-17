@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:eDecor.Mobile.Converters"
+             x:Class="eDecor.Mobile.Views.NotifikacijeDetaljiPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Entry Text="{Binding Naziv}" FontSize="20" IsReadOnly="True"></Entry>
+                <StackLayout Padding="2" Orientation="Horizontal" >
+                    <Label Text="{Binding Autor}" FontSize="10"/>
+                    <Label Text="{Binding DatumSlanja}" FontSize="10"/>
+                </StackLayout>
+                <Label></Label>
+                <Label  Text="{Binding Sadrzaj}" FontSize="16"></Label>
+                <Label></Label>
+                <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" WidthRequest="400" HeightRequest="250"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

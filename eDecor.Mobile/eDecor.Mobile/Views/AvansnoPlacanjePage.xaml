@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eDecor.Mobile.Views.AvansnoPlacanjePage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions ="CenterAndExpand" Padding ="25">
+            <Label HorizontalOptions="CenterAndExpand" FontSize="Title" TextColor="#FF8C69">Uplatite iznos</Label>
+            <Label HorizontalOptions="CenterAndExpand" FontSize="Title" TextColor="#FF8C69">(moguća uplata dijela iznosa)</Label>
+            <Label HorizontalOptions="CenterAndExpand" Text="{Binding UkupanIznosZaPlatiti}" FontSize="Title" TextColor="#FF8C69"/>
+            <Label HorizontalOptions="CenterAndExpand" TextColor="LightGray">(Broj kartice: 4242424242424242)</Label>
+            <Label/>
+            <Grid>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                    <Entry Grid.Row="0" Grid.ColumnSpan="2" Placeholder="Unesite broj kartice(16 brojeva)" Text="{Binding BrojKartice}"/>
+                    <Entry Grid.Row="1" Grid.Column="0" Placeholder="MM(2 broja)" Text="{Binding Mjesec}"/>
+                    <Entry Grid.Row="1" Grid.Column="1" Placeholder="YY(2 broja)" Text="{Binding Godina}"/>
+                <Entry Grid.Row="2" Grid.ColumnSpan="2" Placeholder="CVC(3 broja)" Text="{Binding Cvc}"/>
+                <Entry Grid.Row="3" Grid.ColumnSpan="2" Placeholder="Iznos za uplatu(KM)" Text="{Binding Iznos}"/>
+            </Grid>
+            <Button Clicked="Button_Clicked" Padding="25" BackgroundColor="#FF8C69" TextColor="White" Text="Uplati"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

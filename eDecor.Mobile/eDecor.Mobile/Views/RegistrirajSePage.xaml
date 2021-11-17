@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:eDecor.Mobile.ViewModels"
+             x:Class="eDecor.Mobile.Views.RegistrirajSePage">
+    <!--<ContentPage.BindingContext>
+        <vm:RegistrirajSeViewModel/>
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="15">
+                <Label HorizontalOptions="CenterAndExpand" TextColor="#FF8C69" FontSize="Title">Registriraj se</Label>
+                <Label/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Margin ="0, 10, 0, 10"  TextColor="#FF8C69" Grid.ColumnSpan="2" FontSize="18" Grid.Row="0">Lični podaci:</Label>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="1">Ime:</Label>
+                    <Entry x:Name="Ime" Text="{Binding Ime}" Grid.Row="1" Grid.Column="1" ></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="2">Prezime:</Label>
+                    <Entry x:Name="Prezime" Text="{Binding Prezime}" Grid.Row="2" Grid.Column="1"></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="3">Email:</Label>
+                    <Entry x:Name="Email" Text="{Binding Email}" Focused="Email_Focused" Grid.Row="3" Grid.Column="1"></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="4">Telefon:</Label>
+                    <Entry x:Name="Telefon" Text="{Binding Telefon}" Focused="Telefon_Focused" Grid.Row="4" Grid.Column="1"></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="5">Grad:</Label>
+                    <Picker x:Name="ItemsListView" ItemsSource="{Binding gradoviList}"  SelectedItem="{Binding SelectedGrad}" Grid.Row="5" Grid.Column="1"></Picker>
+                    <Label  Margin ="0, 20, 0, 10"  TextColor="#FF8C69" Grid.ColumnSpan="2" FontSize="18" Grid.Row="6">Korisnički podaci:</Label>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="7">Korisničko ime:</Label>
+                    <Entry x:Name="KorisnickoIme" Text="{Binding KorisnickoIme}" Focused="KorisnickoIme_Focused" Grid.Row="7" Grid.Column="1"></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="8">Lozinka:</Label>
+                    <Entry x:Name="Lozinka" Text="{Binding Lozinka}" Focused="Lozinka_Focused" IsPassword="True" Grid.Row="8" Grid.Column="1"></Entry>
+                    <Label Margin ="10, 0, 0, 0" VerticalTextAlignment="Center" Grid.Row="9">Potvrda lozinke:</Label>
+                    <Entry x:Name="PotvrdaLozinke" Text="{Binding PotvrdaLozinke}" Focused="Lozinka_Focused" IsPassword="True" Grid.Row="9" Grid.Column="1"></Entry>
+                </Grid>
+                <Label/>
+                <Button x:Name="RegistrujSe" Clicked="RegistrujSe_Clicked" BackgroundColor="#FF8C69" TextColor="White" Text="Registruj se"></Button>
+                <Label/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Imate korisnički nalog?" VerticalTextAlignment="Center"/>
+                    <Button Command="{Binding PrijaviSeCommand}" TextColor="#FF8C69" BackgroundColor="White" Text="Prijavi se"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

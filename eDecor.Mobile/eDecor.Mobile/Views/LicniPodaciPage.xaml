@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eDecor.Mobile.Views.LicniPodaciPage" BackgroundColor="#FF8C69">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="15">
+                <Label HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Title">Lični podaci</Label>
+                <Label/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="0" TextColor="White">Ime:</Label>
+                    <Entry x:Name="Ime" Text="{Binding Ime}" Grid.Row="0" Grid.Column="1" ></Entry>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="1" TextColor="White">Prezime:</Label>
+                    <Entry x:Name="Prezime" Text="{Binding Prezime}" Grid.Row="1" Grid.Column="1"></Entry>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="2" TextColor="White">Email:</Label>
+                    <Entry x:Name="Email" Text="{Binding Email}" Focused="Email_Focused" Grid.Row="2" Grid.Column="1"></Entry>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="3" TextColor="White">Telefon:</Label>
+                    <Entry x:Name="Telefon" Text="{Binding Telefon}" Focused="Telefon_Focused" Grid.Row="3" Grid.Column="1"></Entry>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="4" TextColor="White">Grad:</Label>
+                    <Picker x:Name="ItemsListView" ItemsSource="{Binding gradoviList}"  SelectedItem="{Binding SelectedGrad}" Grid.Row="4" Grid.Column="1"></Picker>
+                    
+                    <Label Grid.Row="5"> </Label>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="6" TextColor="White">Lozinka: *</Label>
+                    <Entry x:Name="Lozinka" Text="{Binding Lozinka}" Focused="Lozinka_Focused" Grid.Row="6" IsPassword="True" Grid.Column="1"></Entry>
+
+                    <Label Grid.Row="7"></Label>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="8" TextColor="White">Nova lozinka:</Label>
+                    <Entry x:Name="NovaLozinka" Text="{Binding NovaLozinka}" Focused="NovaLozinka_Focused" IsPassword="True" Grid.Row="8" Grid.Column="1"></Entry>
+
+                    <Label Margin ="10, 0, 0, 0" Grid.Row="9" TextColor="White">Potvrda nove lozinke:</Label>
+                    <Entry x:Name="PotvrdaNoveLozinke" Text="{Binding PotvrdaNoveLozinke}" Focused="NovaLozinka_Focused" IsPassword="True" Grid.Row="9" Grid.Column="1"></Entry>
+                </Grid>
+                <Label/>
+                <Button x:Name="Uredi" Clicked="Uredi_Clicked" BackgroundColor="#White" TextColor="White" Text="Uredi podatke"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

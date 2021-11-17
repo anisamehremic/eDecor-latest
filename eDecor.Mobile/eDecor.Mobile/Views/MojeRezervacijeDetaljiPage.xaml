@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:eDecor.Mobile.Converters"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="eDecor.Mobile.Views.MojeRezervacijeDetaljiPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageConverter x:Key="imgConv"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <StackLayout>
+                <Label Text="Odabrani artikli:" FontSize="20"  TextColor="#FF8C69"/>
+                <ScrollView>
+                    <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding InitCommand}">
+                        <CollectionView x:Name="ItemsCollectionView2" ItemsSource="{Binding artikliList}" HeightRequest="200">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Padding="3" Orientation="Horizontal">
+                                        <Image Source="{Binding Slika, Converter={StaticResource imgConv}}" WidthRequest="150" HeightRequest="95"/>
+                                        <Label Text="{Binding Naziv}" 
+                                            d:Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                        <Label Text="{Binding Cijena}" 
+                                            d:Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                        <Label Text=" (" 
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                        <Label Text="{Binding Kolicina}" 
+                                            d:Text="{Binding .}"
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                        <Label Text=" kom) KM" 
+                                            VerticalOptions="CenterAndExpand"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="16" />
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </RefreshView>
+                </ScrollView>
+            </StackLayout>
+            <Label/>
+            <StackLayout>
+                <Label/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Slider Grid.Column="0"  Grid.ColumnSpan="3" Value="{Binding Ocjena, Mode = TwoWay}" Maximum="10" Minimum="1"  />
+                    <Entry  Grid.Column="3" Text="{Binding Ocjena}" IsReadOnly="True"/>
+                    <Button Grid.Column="4" BorderColor="Gray" Text="Ocjeni" Clicked="Button_Clicked_Ocjena"/>
+                </Grid>
+            </StackLayout>
+            <Label/>
+            <StackLayout>
+                <Label Text="Detalji narudžbe" FontSize="20"  TextColor="#FF8C69"/>
+                <ScrollView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="Datum kreiranja:"/>
+                        <Entry Grid.Row="1" Grid.Column="0" Text="{Binding DatumKreiranja}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="Adrsa"/>
+                        <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Adresa}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="0" Grid.Column="2" Text="Grad"/>
+                        <Entry Grid.Row="1" Grid.Column="2" Text="{Binding Grad}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="Napomena"/>
+                        <Entry Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Napomena}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="4" Grid.Column="0" Text="Cijena"/>
+                        <Entry Grid.Row="5" Grid.Column="0" Text="{Binding Cijena}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="4" Grid.Column="1" Text="Popust"/>
+                        <Entry Grid.Row="5" Grid.Column="1" Text="{Binding Popust}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="4" Grid.Column="2" Text="Ukupno"/>
+                        <Entry Grid.Row="5" Grid.Column="2" Text="{Binding Ukupno}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="6" Grid.Column="0" Text="Uplaćeno"/>
+                        <Entry Grid.Row="7" Grid.Column="0" Text="{Binding IznosAvansnogPlacanje}" IsReadOnly="True"></Entry>
+
+                        <Label Grid.Row="6" Grid.Column="1" Text="Plaćeno"/>
+                        <Entry Grid.Row="7" Grid.Column="1" Text="{Binding Placeno}" IsReadOnly="True"></Entry>
+                        
+                        <Label Grid.Row="6" Grid.Column="2" Text="Status"/>
+                        <Entry Grid.Row="7" Grid.Column="2" Text="{Binding Status}" IsReadOnly="True"></Entry>
+                    </Grid>
+                </ScrollView>
+                <Label/>
+            </StackLayout>
+            <Button BorderColor="Gray" Text="Otkaži rezervaciju" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

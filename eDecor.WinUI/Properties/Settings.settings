@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="eDecor.WinUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APIUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63193/api</Value>
+    </Setting>
+    <Setting Name="APIUrlHttps" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:44374/api</Value>
+    </Setting>
+    <Setting Name="APIUrlDocker" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:5000/api</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
